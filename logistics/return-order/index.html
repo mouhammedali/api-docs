@@ -870,15 +870,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#2-return-order" class="md-nav__link">
+  <a href="#return-order_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Return Order
+        Return Order
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Return Order">
+    <nav class="md-nav" aria-label="Return Order">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1087,15 +1087,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#2-return-order" class="md-nav__link">
+  <a href="#return-order_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Return Order
+        Return Order
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Return Order">
+    <nav class="md-nav" aria-label="Return Order">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1165,25 +1165,25 @@
 
 
 <h1 id="return-order">Return Order<a class="headerlink" href="#return-order" title="Permanent link">&para;</a></h1>
-<h3 id="2-return-order"><strong>2. Return Order</strong><a class="headerlink" href="#2-return-order" title="Permanent link">&para;</a></h3>
-<p><strong>Endpoint:</strong> [POST] Base_URL/api/external/v1/return-order</p>
+<h3 id="return-order_1">Return Order<a class="headerlink" href="#return-order_1" title="Permanent link">&para;</a></h3>
+<p><strong>Endpoint:</strong> <span class="api-method api-method--post">POST</span> <code>Base_URL/api/external/v1/return-order</code></p>
 <p>Returns an order to the sender. Only orders with specific statuses can be returned.</p>
-<h4 id="allowed-statuses-for-return"><strong>Allowed Statuses for Return</strong><a class="headerlink" href="#allowed-statuses-for-return" title="Permanent link">&para;</a></h4>
+<h4 id="allowed-statuses-for-return">Allowed Statuses for Return<a class="headerlink" href="#allowed-statuses-for-return" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong>Arrived To Store</strong></li>
 </ul>
-<h4 id="request-headers"><strong>Request Headers</strong><a class="headerlink" href="#request-headers" title="Permanent link">&para;</a></h4>
+<h4 id="request-headers">Request Headers<a class="headerlink" href="#request-headers" title="Permanent link">&para;</a></h4>
 <p>Authorization: Bearer API-KEY</p>
 <p>Accept: application/json</p>
 <p>Content-Type: application/json</p>
 <p>lang: en (optional, default: ar)</p>
-<h4 id="request-payload"><strong>Request Payload</strong><a class="headerlink" href="#request-payload" title="Permanent link">&para;</a></h4>
+<h4 id="request-payload">Request Payload<a class="headerlink" href="#request-payload" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;order_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2127645</span><span class="p">,</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;reason_of_cancel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Client refused delivery&quot;</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">}</span>
 </code></pre></div>
-<h4 id="response-examples"><strong>Response Examples</strong><a class="headerlink" href="#response-examples" title="Permanent link">&para;</a></h4>
+<h4 id="response-examples">Response Examples<a class="headerlink" href="#response-examples" title="Permanent link">&para;</a></h4>
 <p><strong>Success Response (Status: 200)</strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span>
