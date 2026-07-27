@@ -1,6 +1,8 @@
 # Menu Management
 
-### **4. menu-update [POST]** Base_URL/api/v1/vendor/menu-update/{location_id}
+### menu-update
+
+<span class="api-method api-method--post">POST</span> <code>Base_URL/api/v1/vendor/menu-update/{location_id}</code>
 
 This API is used to create or update location's menu.
 

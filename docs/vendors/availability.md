@@ -1,6 +1,8 @@
 # Availability & Timing
 
-### **5. busy-mode [POST]** Base_URL/api/v1/vendor/busy-mode
+### busy-mode
+
+<span class="api-method api-method--post">POST</span> <code>Base_URL/api/v1/vendor/busy-mode</code>
 
 This API is used to make a location in busy mode to stop receiving orders.
 
@@ -44,7 +46,9 @@ Status 400
 }
 ```
 
-### **6. Snooze Unsnooze Product or modifier item [POST]** Base_URL/api/v1/vendor/snoozeUnsnooze
+### Snooze Unsnooze Product or modifier item
+
+<span class="api-method api-method--post">POST</span> <code>Base_URL/api/v1/vendor/snoozeUnsnooze</code>
 
 This API is used to make a product or a modifier item Snooze or Unsnooze.
 
@@ -113,7 +117,9 @@ Status : 400
 }
 ```
 
-### **7. Update Prep Time [POST]** Base_URL/api/v1/vendor/updatePrepTime
+### Update Prep Time
+
+<span class="api-method api-method--post">POST</span> <code>Base_URL/api/v1/vendor/updatePrepTime</code>
 
 This API is used to send order preparation time
 

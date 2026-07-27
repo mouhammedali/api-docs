@@ -1,18 +1,18 @@
 # Cancel Order
 
-### **1. Cancel Order**
+### Cancel Order
 
-**Endpoint:** [POST] Base_URL/api/external/v1/cancel-order
+**Endpoint:** <span class="api-method api-method--post">POST</span> <code>Base_URL/api/external/v1/cancel-order</code>
 
 Cancels an existing order. Only orders with specific statuses can be cancelled.
 
-#### **Allowed Statuses for Cancellation**
+#### Allowed Statuses for Cancellation
 
 - New
 
 - Accepted
 
-#### **Request Headers**
+#### Request Headers
 
 Authorization: Bearer API-KEY
 
@@ -22,7 +22,7 @@ Content-Type: application/json
 
 lang: en (optional, default: ar)
 
-#### **Request Payload**
+#### Request Payload
 
 ```json
 {
@@ -31,7 +31,7 @@ lang: en (optional, default: ar)
 }
 ```
 
-#### **Response Examples**
+#### Response Examples
 
 **Success Response (Status: 200)**
 

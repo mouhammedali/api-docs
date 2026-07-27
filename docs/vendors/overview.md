@@ -1,6 +1,8 @@
 # Overview & Authentication
 
-### **1. Get Days [GET] Base_URL/api/v1/vendor/days**
+### Get Days
+
+<span class="api-method api-method--get">GET</span> <code>Base_URL/api/v1/vendor/days</code>
 
 This API is used to retrieve the available days and their IDs.
 
@@ -56,7 +58,9 @@ This endpoint does not require a request payload.
 }]
 ```
 
-### **2. Get allergens [GET] Base_URL/api/v1/vendor/allergens**
+### Get allergens
+
+<span class="api-method api-method--get">GET</span> <code>Base_URL/api/v1/vendor/allergens</code>
 
 This API is used to retrieve all allergens.
 
@@ -211,7 +215,9 @@ This endpoint does not require a request payload.
 ]
 ```
 
-### **3. Create Token [POST] Auth_Base_URL/api/v1/create-token**
+### Create Token
+
+<span class="api-method api-method--post">POST</span> <code>Auth_Base_URL/api/v1/create-token</code>
 
 This API is used to create jwt tokens.
 

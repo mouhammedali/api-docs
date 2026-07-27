@@ -1,16 +1,16 @@
 # Return Order
 
-### **2. Return Order**
+### Return Order
 
-**Endpoint:** [POST] Base_URL/api/external/v1/return-order
+**Endpoint:** <span class="api-method api-method--post">POST</span> <code>Base_URL/api/external/v1/return-order</code>
 
 Returns an order to the sender. Only orders with specific statuses can be returned.
 
-#### **Allowed Statuses for Return**
+#### Allowed Statuses for Return
 
 - **Arrived To Store**
 
-#### **Request Headers**
+#### Request Headers
 
 Authorization: Bearer API-KEY
 
@@ -20,7 +20,7 @@ Content-Type: application/json
 
 lang: en (optional, default: ar)
 
-#### **Request Payload**
+#### Request Payload
 
 ```json
 {
@@ -29,7 +29,7 @@ lang: en (optional, default: ar)
 }
 ```
 
-#### **Response Examples**
+#### Response Examples
 
 **Success Response (Status: 200)**
 

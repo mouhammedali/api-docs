@@ -1,6 +1,8 @@
 # Categories
 
-###  **Add Category [POST]** Base_URL/api/v1/categories/add/{{partner_name}}
+### Add Category
+
+<span class="api-method api-method--post">POST</span> <code>Base_URL/api/v1/categories/add/{{partner_name}}</code>
 
 This API is used to create a single category for a big menu.
 
@@ -16,21 +18,15 @@ This API is used to create a single category for a big menu.
 
 - **en_name: English category name**
 
-
 - **ar_name: Arabic category name**
-
 
 - **category_id: Unique category identifier**
 
-
 - **parent_id: null for parent categories**
-
 
 - **image_url: Category image URL**
 
-
 - **active: Category status (true/false)**
-
 
 **Payload**
 
@@ -73,7 +69,9 @@ Response
 
 **edit category**
 
-###  **Update Category [POST]** Base_URL/api/v1/categories/update/{{partner_name}}
+### Update Category
+
+<span class="api-method api-method--post">POST</span> <code>Base_URL/api/v1/categories/update/{{partner_name}}</code>
 
 This API is used to update a single category for a big menu.
 
@@ -89,21 +87,15 @@ This API is used to update a single category for a big menu.
 
 - **en_name: English category name**
 
-
 - **ar_name: Arabic category name**
-
 
 - **category_id: Unique category identifier**
 
-
 - **parent_id: null for parent categories**
-
 
 - **image_url: Category image URL**
 
-
 - **active: Category status (true/false)**
-
 
 **Payload**
 

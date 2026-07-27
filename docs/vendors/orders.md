@@ -1,6 +1,8 @@
 # Orders & Webhooks
 
-### **8. Cancel order [POST]** Base_URL/api/v1/vendor/order-status-update
+### Cancel order
+
+<span class="api-method api-method--post">POST</span> <code>Base_URL/api/v1/vendor/order-status-update</code>
 
 This API is used to cancel an order.
 
@@ -43,9 +45,11 @@ Status : 400
 }
 ```
 
-### **Vendor webhooks**
+### Vendor webhooks
 
-### **9. Place order [POST] vendor_**Base_URL
+### Place order
+
+<span class="api-method api-method--post">POST</span> <code>vendor_Base_URL</code>
 
 This API is used to place an order
 
@@ -218,7 +222,9 @@ Status : 400
 Return validation errors
 ```
 
-### **10. Cancel order [POST] vendor_**Base_URL
+### Cancel order
+
+<span class="api-method api-method--post">POST</span> <code>vendor_Base_URL</code>
 
 This API is used to cancel an order from MrMandoob.
 

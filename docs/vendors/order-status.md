@@ -1,6 +1,8 @@
 # Order Status Updates
 
-### **Update order [POST]** Base_URL/api/v1/partner/order-update
+### Update order
+
+<span class="api-method api-method--post">POST</span> <code>Base_URL/api/v1/partner/order-update</code>
 
 This API is used to update an order.
 
@@ -14,9 +16,7 @@ This API is used to update an order.
 
 - partner_order_id (string, required): Unique identifier for the partner order
 
-
 - status (string, required): ex: D,C,A New status of the order (e.g., "delivered", "canceled", "accepted")
-
 
 ```json
 {

@@ -1,6 +1,8 @@
 # Promotions & Inventory
 
-###  **Add promotion [POST]** Base_URL/api/v1/productDiscount/add/{{partner_name}}
+### Add promotion
+
+<span class="api-method api-method--post">POST</span> <code>Base_URL/api/v1/productDiscount/add/{{partner_name}}</code>
 
 This API is used to add a discount on specific products.
 
@@ -11,7 +13,6 @@ This API is used to add a discount on specific products.
 - **apiKey** -- same value as secretKey
 
 > ⚠️ Both headers must have **the same value** ($APIKEY) and be sent with **every request**, otherwise you'll get a **401 Unauthorized** error.
-
 
 **Payload**
 
@@ -58,7 +59,9 @@ This API is used to add a discount on specific products.
 
 **update promotion**
 
-###  **Update promotion [POST]** Base_URL/api/v1/productDiscount/update/{{partner_name}}
+### Update promotion
+
+<span class="api-method api-method--post">POST</span> <code>Base_URL/api/v1/productDiscount/update/{{partner_name}}</code>
 
 This API is used to update a discount date or description only.
 
@@ -69,7 +72,6 @@ This API is used to update a discount date or description only.
 - **apiKey** -- same value as secretKey
 
 > ⚠️ Both headers must have **the same value** ($APIKEY) and be sent with **every request**, otherwise you'll get a **401 Unauthorized** error.
-
 
 **Payload**
 
@@ -114,10 +116,11 @@ This API is used to update a discount date or description only.
 
 **delete promotion**
 
-###  **Delete promotion[POST]** Base_URL/api/v1/productDiscount/delete/{{partner_name}}
+### Delete promotion
+
+<span class="api-method api-method--post">POST</span> <code>Base_URL/api/v1/productDiscount/delete/{{partner_name}}</code>
 
 This API is used to delete a discount.
-
 
 **Headers**
 
@@ -165,10 +168,11 @@ This API is used to delete a discount.
 
 **Product Inventory**
 
-###  **Product Inventory[POST]** Base_URL/api/v1/productInventory/sync/{{partner_name}}
+### Product Inventory
+
+<span class="api-method api-method--post">POST</span> <code>Base_URL/api/v1/productInventory/sync/{{partner_name}}</code>
 
 This API is used update qty and availability
-
 
 **Headers**
 

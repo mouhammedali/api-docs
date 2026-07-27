@@ -8,9 +8,9 @@
 
 **Note:** partners must send their ip's for both staging and production, so we can whitelist them.
 
-### **1. Add Order** 
+### Add Order
 
-### **[POST] Base_URL/api/external/v1/add-order**
+<span class="api-method api-method--post">POST</span> <code>Base_URL/api/external/v1/add-order</code>
 
 This API is used to add orders.
 

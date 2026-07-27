@@ -1,6 +1,8 @@
 # Products
 
-###  **Add products [POST]** Base_URL/api/v1/products/add/{{partner_name}}
+### Add products
+
+<span class="api-method api-method--post">POST</span> <code>Base_URL/api/v1/products/add/{{partner_name}}</code>
 
 This API is used to add products for a big menu , max 1000 products.
 
@@ -16,35 +18,25 @@ This API is used to add products for a big menu , max 1000 products.
 
 - **callbackUrl :If the product addition fails, the system will send the result to the callback URL**
 
-
 - **reference_id :Reference ID of the request, used to identify which request failed**
-
 
 <!-- -->
 
 - **products: Array wrapper for batch operations**
 
-
   - **id: Product identifier**
-
 
   - **en_name/ar_name: English and Arabic product names**
 
-
   - **en_description/ar_description: English and Arabic descriptions**
-
 
   - **price: Product price as decimal**
 
-
   - **is_active: Product status (true/false)**
-
 
   - **imageurls: Array of image URLs**
 
-
   - **subcategories: Array of category associations with parent references**
-
 
 **Payload**
 
@@ -153,7 +145,9 @@ This API is used to add products for a big menu , max 1000 products.
 
 **update products**
 
-###  **Update products [POST]** Base_URL/api/v1/products/update/{{partner_name}}
+### Update products
+
+<span class="api-method api-method--post">POST</span> <code>Base_URL/api/v1/products/update/{{partner_name}}</code>
 
 This API is used to update products for a big menu , max 1000 products.
 
@@ -169,36 +163,25 @@ This API is used to update products for a big menu , max 1000 products.
 
 - **callbackUrl :If the product addition fails, the system will send the result to the callback URL**
 
-
 - **reference_id :Reference ID of the request, used to identify which request failed**
-
 
 <!-- -->
 
 - **products: Array wrapper for batch operations**
 
-
   - **id: Product identifier**
-
 
   - **en_name/ar_name: English and Arabic product names**
 
-
   - **en_description/ar_description: English and Arabic descriptions**
-
 
   - **price: Product price as decimal**
 
-
   - **is_active: Product status (true/false)**
-
 
   - **imageurls: Array of image URLs**
 
-
   - **subcategories: Array of category associations with parent references**
-
-
 
 **Payload**
 

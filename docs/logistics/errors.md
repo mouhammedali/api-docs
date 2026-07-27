@@ -2,7 +2,7 @@
 
 ## **Error Handling**
 
-### **Common HTTP Status Codes**
+### Common HTTP Status Codes
 
 - **200:** Success
 
@@ -10,7 +10,7 @@
 
 - **401:** Unauthenticated - Invalid or missing API key
 
-### **Error Response Format**
+### Error Response Format
 
 All error responses follow a consistent format:
 

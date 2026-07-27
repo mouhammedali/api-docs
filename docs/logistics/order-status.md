@@ -1,12 +1,12 @@
 # Get Order Status
 
-### **3. Get Order Status**
+### Get Order Status
 
-**Endpoint:** [GET] Base_URL/api/external/v1/get-order-status
+**Endpoint:** <span class="api-method api-method--get">GET</span> <code>Base_URL/api/external/v1/get-order-status</code>
 
 Retrieves the current status of an order.
 
-#### **Request Headers**
+#### Request Headers
 
 Authorization: Bearer API-KEY
 
@@ -16,11 +16,11 @@ Content-Type: application/json
 
 lang: en (optional, default: ar)
 
-#### **Query Parameters**
+#### Query Parameters
 
 order_id: 2127645
 
-#### **Response Examples**
+#### Response Examples
 
 **Success Response (Status: 200)**
 
@@ -56,7 +56,7 @@ order_id: 2127645
 }
 ```
 
-#### **Possible Status Values**
+#### Possible Status Values
 
 - new
 

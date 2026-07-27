@@ -12,7 +12,7 @@
 
 All API requests require authentication using a Bearer token in the Authorization header.
 
-### **Common Headers**
+### Common Headers
 
 Authorization: Bearer API-KEY
 
