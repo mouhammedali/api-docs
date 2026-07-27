@@ -1037,6 +1037,73 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Request Payload Change Courier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#change-courier-webhook-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Change Courier Webhook Sequence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-live-tracking-for-orders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get Live Tracking For Orders
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Get Live Tracking For Orders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-headers_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request Headers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Query Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Response Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1197,6 +1264,73 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Request Payload Change Courier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#change-courier-webhook-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Change Courier Webhook Sequence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-live-tracking-for-orders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get Live Tracking For Orders
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Get Live Tracking For Orders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-headers_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request Headers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Query Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Response Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1217,74 +1351,61 @@
 
 
 <h1 id="change-status-webhook">Change Status Webhook<a class="headerlink" href="#change-status-webhook" title="Permanent link">&para;</a></h1>
-<p><strong>This webhook is used to notify the system when an order status is updated or order created (e.g., new, delivered, canceled, etc.).</strong></p>
-<h2 id="endpoint-test-url"><strong>Endpoint Test URL</strong><a class="headerlink" href="#endpoint-test-url" title="Permanent link">&para;</a></h2>
-<p><strong>POST {{your webhook api url}}</strong></p>
-<h2 id="endpoint-production-url"><strong>Endpoint Production URL</strong><a class="headerlink" href="#endpoint-production-url" title="Permanent link">&para;</a></h2>
-<p><strong>POST {{your webhook api url}}</strong></p>
-<h2 id="description"><strong>Description</strong><a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
-<p><strong>When an order status changes, a webhook request will be sent to the above endpoint containing the order identifier, the new status, and the event metadata.</strong></p>
-<h2 id="request-headers"><strong>Request Headers</strong><a class="headerlink" href="#request-headers" title="Permanent link">&para;</a></h2>
-<p><strong>Content-Type: application/json</strong></p>
-<p><strong>Authorization: Bearer {your_webhook_key} <em>(optional)</em></strong></p>
-<p><strong><em>Note: You can add an authorization key in the Bearer token to authorize the request.</em></strong></p>
-<p><strong><em>Estimated Time of Arrival (eta)</em></strong></p>
+<p>This webhook is used to notify the system when an order status is updated or order created (e.g., new, delivered, canceled, etc.).</p>
+<h2 id="endpoint-test-url">Endpoint Test URL<a class="headerlink" href="#endpoint-test-url" title="Permanent link">&para;</a></h2>
+<p><code>POST {{your webhook api url}}</code></p>
+<h2 id="endpoint-production-url">Endpoint Production URL<a class="headerlink" href="#endpoint-production-url" title="Permanent link">&para;</a></h2>
+<p><code>POST {{your webhook api url}}</code></p>
+<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
+<p>When an order status changes, a webhook request will be sent to the above endpoint containing the order identifier, the new status, and the event metadata.</p>
+<h2 id="request-headers">Request Headers<a class="headerlink" href="#request-headers" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Content-Type: application/json
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Authorization: Bearer {your_webhook_key} (optional)
+</code></pre></div>
+<p><strong>Note:</strong> You can add an authorization key in the Bearer token to authorize the request.</p>
+<p><strong>Estimated Time of Arrival (eta)</strong></p>
 <ul>
 <li>
-<p><strong><em>eta (timestamp)</em></strong></p>
+<p>eta (timestamp)</p>
 </li>
 <li>
-<p><strong><em>eta_minutes (number of minutes)</em></strong></p>
+<p>eta_minutes (number of minutes)</p>
 </li>
 </ul>
-<h2 id="request-payload-new-order-created"><strong>Request Payload New Order Created</strong><a class="headerlink" href="#request-payload-new-order-created" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;event&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;order_created&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;event_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-12-23 12:20:44&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">&quot;order_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">212853</span><span class="p">,</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">&quot;order_status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;new&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nt">&quot;courier_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="nt">&quot;courier_lat&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="nt">&quot;courier_long&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nt">&quot;courier_phone&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="nt">&quot;eta&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span><span class="nt">&quot;eta_minutes&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">  </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="nt">&quot;merchant_order_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;98765&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="nt">&quot;from_address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Test Address&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="nt">&quot;from_lat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">24.697347</span><span class="p">,</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="nt">&quot;from_long&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">46.681999</span><span class="p">,</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="nt">&quot;from_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Warehouse A&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">    </span><span class="nt">&quot;to_address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Test Address&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="nt">&quot;to_lat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">24.7135</span><span class="p">,</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="nt">&quot;to_long&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">46.6752</span><span class="p">,</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span><span class="nt">&quot;customer&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">      </span><span class="nt">&quot;phone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;966555555555&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Customer Name&quot;</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="p">}</span>
-</code></pre></div>
-<h2 id="request-payload-update-order-status"><strong>Request Payload Update Order Status</strong><a class="headerlink" href="#request-payload-update-order-status" title="Permanent link">&para;</a></h2>
+<h2 id="request-payload-new-order-created">Request Payload New Order Created<a class="headerlink" href="#request-payload-new-order-created" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nt">&quot;event&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;order_updated&quot;</span><span class="p">,</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nt">&quot;event_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-12-23 12:20:44&quot;</span><span class="p">,</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nt">&quot;order_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">212853</span><span class="p">,</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nt">&quot;order_status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;delivered&quot;</span><span class="p">,</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nt">&quot;courier_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Courier Name&quot;</span><span class="p">,</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nt">&quot;courier_lat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">24.697347</span><span class="p">,</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="nt">&quot;courier_long&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">46.681999</span><span class="p">,</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="nt">&quot;courier_phone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;966555555555&quot;</span><span class="p">,</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="nt">&quot;eta&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-02-09 14:10:58&quot;</span><span class="p">,</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="nt">&quot;eta_minutes&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;57&quot;</span><span class="p">,</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="p">}</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;event&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;order_created&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nt">&quot;event_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-12-23 12:20:44&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nt">&quot;order_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">212853</span><span class="p">,</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="nt">&quot;order_status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;new&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="nt">&quot;courier_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="nt">&quot;courier_lat&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">  </span><span class="nt">&quot;courier_long&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span><span class="nt">&quot;courier_phone&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">  </span><span class="nt">&quot;eta&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">  </span><span class="nt">&quot;eta_minutes&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">  </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="nt">&quot;merchant_order_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;98765&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="nt">&quot;from_address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Test Address&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">    </span><span class="nt">&quot;from_lat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">24.697347</span><span class="p">,</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">    </span><span class="nt">&quot;from_long&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">46.681999</span><span class="p">,</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">    </span><span class="nt">&quot;from_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Warehouse A&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">    </span><span class="nt">&quot;to_address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Test Address&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">    </span><span class="nt">&quot;to_lat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">24.7135</span><span class="p">,</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">    </span><span class="nt">&quot;to_long&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">46.6752</span><span class="p">,</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">    </span><span class="nt">&quot;customer&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">      </span><span class="nt">&quot;phone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;966555555555&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Customer Name&quot;</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="p">}</span>
 </code></pre></div>
-<h2 id="request-payload-returned-order-status"><strong>Request Payload Returned Order Status</strong><a class="headerlink" href="#request-payload-returned-order-status" title="Permanent link">&para;</a></h2>
+<h2 id="request-payload-update-order-status">Request Payload Update Order Status<a class="headerlink" href="#request-payload-update-order-status" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">&quot;event&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;order_returned&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">&quot;event&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;order_updated&quot;</span><span class="p">,</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nt">&quot;event_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-12-23 12:20:44&quot;</span><span class="p">,</span>
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nt">&quot;order_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">212853</span><span class="p">,</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nt">&quot;order_status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;returned&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nt">&quot;order_status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;delivered&quot;</span><span class="p">,</span>
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nt">&quot;courier_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Courier Name&quot;</span><span class="p">,</span>
 <a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="nt">&quot;courier_lat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">24.697347</span><span class="p">,</span>
 <a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="nt">&quot;courier_long&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">46.681999</span><span class="p">,</span>
@@ -1293,12 +1414,12 @@
 <a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="nt">&quot;eta_minutes&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;57&quot;</span><span class="p">,</span>
 <a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="p">}</span>
 </code></pre></div>
-<h2 id="request-payload-change-courier"><strong>Request Payload Change Courier</strong><a class="headerlink" href="#request-payload-change-courier" title="Permanent link">&para;</a></h2>
+<h2 id="request-payload-returned-order-status">Request Payload Returned Order Status<a class="headerlink" href="#request-payload-returned-order-status" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nt">&quot;event&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;courier_changed&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nt">&quot;event&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;order_returned&quot;</span><span class="p">,</span>
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nt">&quot;event_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-12-23 12:20:44&quot;</span><span class="p">,</span>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="nt">&quot;order_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">212853</span><span class="p">,</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nt">&quot;order_status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;accepted&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nt">&quot;order_status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;returned&quot;</span><span class="p">,</span>
 <a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="nt">&quot;courier_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Courier Name&quot;</span><span class="p">,</span>
 <a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="nt">&quot;courier_lat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">24.697347</span><span class="p">,</span>
 <a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="nt">&quot;courier_long&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">46.681999</span><span class="p">,</span>
@@ -1307,62 +1428,72 @@
 <a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="nt">&quot;eta_minutes&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;57&quot;</span><span class="p">,</span>
 <a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="p">}</span>
 </code></pre></div>
-<p><strong>Hint: Change Courier --- Webhook Sequence</strong></p>
-<p><strong>When a courier is reassigned on an order, the system fires 3 webhooks in sequence</strong></p>
-<p><strong>What happens internally</strong></p>
+<h2 id="request-payload-change-courier">Request Payload Change Courier<a class="headerlink" href="#request-payload-change-courier" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">{</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nt">&quot;event&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;courier_changed&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nt">&quot;event_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-12-23 12:20:44&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nt">&quot;order_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">212853</span><span class="p">,</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nt">&quot;order_status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;accepted&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="nt">&quot;courier_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Courier Name&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="nt">&quot;courier_lat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">24.697347</span><span class="p">,</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="nt">&quot;courier_long&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">46.681999</span><span class="p">,</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="nt">&quot;courier_phone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;966555555555&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="nt">&quot;eta&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-02-09 14:10:58&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="nt">&quot;eta_minutes&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;57&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="p">}</span>
+</code></pre></div>
+<h4 id="change-courier-webhook-sequence">Change Courier Webhook Sequence<a class="headerlink" href="#change-courier-webhook-sequence" title="Permanent link">&para;</a></h4>
+<p>When a courier is reassigned on an order, the system fires 3 webhooks in sequence.</p>
+<p><strong>What happens internally:</strong></p>
 <ol>
-<li>Old courier is removed --- status set to new</li>
+<li>
+<p>Old courier is removed — status set to new. The existing courier is unassigned. The order reverts to new status and an order_updated webhook is sent with courier fields as null.</p>
+</li>
+<li>
+<p>New courier is assigned — status set to accepted. The new courier is linked to the order and their details are populated. An order_updated webhook is sent with the new courier's information.</p>
+</li>
+<li>
+<p>Courier change confirmation sent. A dedicated courier_changed webhook is sent containing the new courier details.</p>
+</li>
 </ol>
-<p>The existing courier is unassigned. The order reverts to new status and an order_updated webhook is sent with courier fields as null.</p>
-<ol>
-<li>New courier is assigned --- status set to accepted</li>
-</ol>
-<p>The new courier is linked to the order and their details are populated. An order_updated webhook is sent with the new courier's information.</p>
-<ol>
-<li>Courier change confirmation sent</li>
-</ol>
-<p>A dedicated courier_changed webhook is sent containing the new courier details<strong>.</strong></p>
-<p><strong>4. Get Live Tracking For Orders</strong></p>
-<hr />
-<p><strong>GET</strong>  Base_URL/api/external/v1/live-tracking</p>
-<hr />
+<h3 id="get-live-tracking-for-orders">Get Live Tracking For Orders<a class="headerlink" href="#get-live-tracking-for-orders" title="Permanent link">&para;</a></h3>
+<p><span class="api-method api-method--get">GET</span> <code>Base_URL/api/external/v1/live-tracking</code></p>
 <p>Retrieves the real-time GPS location of the driver assigned to a specific order.</p>
-<p><strong>Request Headers</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Authorization: Bearer API-KEY
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>Accept: application/json
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>Content-Type: application/json
+<h4 id="request-headers_1">Request Headers<a class="headerlink" href="#request-headers_1" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Authorization: Bearer API-KEY
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>Accept: application/json
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>Content-Type: application/json
 </code></pre></div>
-<p><strong>Query Param</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">{</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nt">&quot;order_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">216475</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">}</span>
-</code></pre></div>
-<p><strong>Response Examples</strong></p>
-<p><strong>Success Response --- Driver Assigned (Status: 200)</strong></p>
+<h4 id="query-parameters">Query Parameters<a class="headerlink" href="#query-parameters" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">{</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nt">&quot;order_status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;accepted&quot;</span><span class="p">,</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="nt">&quot;representative&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="nt">&quot;longitude&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;46.675120&quot;</span><span class="p">,</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="nt">&quot;latitude&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;24.747732&quot;</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="p">}</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nt">&quot;order_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">216475</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">}</span>
 </code></pre></div>
-<p><strong>Success Response --- No Driver Assigned (Status: 200)</strong></p>
+<h4 id="response-examples">Response Examples<a class="headerlink" href="#response-examples" title="Permanent link">&para;</a></h4>
+<p><strong>Success Response — Driver Assigned (Status: 200)</strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">{</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="nt">&quot;order_status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;new&quot;</span><span class="p">,</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span><span class="nt">&quot;representative&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;No driver has been assigned to this order yet.&quot;</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="p">}</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="nt">&quot;order_status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;accepted&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span><span class="nt">&quot;representative&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="nt">&quot;longitude&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;46.675120&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="nt">&quot;latitude&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;24.747732&quot;</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Success Response — No Driver Assigned (Status: 200)</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">{</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="nt">&quot;order_status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;new&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="nt">&quot;representative&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">  </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;No driver has been assigned to this order yet.&quot;</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="p">}</span>
 </code></pre></div>
 <p><strong>Rate Limit Exceeded (Status: 429)</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">{</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Rate limit exceeded. You can call this endpoint once every</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="s2">3 minutes per order. Please try again in 161 second(s) (at 13:14:54).&quot;</span><span class="p">,</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="nt">&quot;retry_after&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">161</span><span class="p">,</span>
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="nt">&quot;retry_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;13:14:54&quot;</span>
-<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">{</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Rate limit exceeded. You can call this endpoint once every 3 minutes per order. Please try again in 161 second(s) (at 13:14:54).&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span><span class="nt">&quot;retry_after&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">161</span><span class="p">,</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">  </span><span class="nt">&quot;retry_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;13:14:54&quot;</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="p">}</span>
 </code></pre></div>
-<p>Note: This endpoint is rate-limited to 1 request per order every 3 minutes. Use retry_after (seconds) or retry_at (clock time) from the response to schedule your next request.</p>
+<p><strong>Note:</strong> This endpoint is rate-limited to 1 request per order every 3 minutes. Use retry_after (seconds) or retry_at (clock time) from the response to schedule your next request.</p>
 
 
 
