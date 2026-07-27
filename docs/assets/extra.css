@@ -1,3 +1,11 @@
+:root {
+  --md-primary-fg-color: #0DAE91;
+  --md-primary-fg-color--light: #3fc4ab;
+  --md-primary-fg-color--dark: #0a8a72;
+  --md-accent-fg-color: #0DAE91;
+  --md-accent-fg-color--transparent: rgba(13, 174, 145, 0.1);
+}
+
 .md-grid {
   max-width: 1240px;
 }
