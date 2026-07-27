@@ -10,6 +10,17 @@
   max-width: 1240px;
 }
 
+.md-header__button.md-logo {
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 2.2rem;
+  width: 2.2rem;
+}
+
 .md-typeset .grid.cards > ul > li,
 .md-typeset .grid > .card {
   transition: transform 0.15s ease, box-shadow 0.15s ease;
