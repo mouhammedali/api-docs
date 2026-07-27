@@ -1,34 +1,35 @@
 # Change Status Webhook
 
-**This webhook is used to notify the system when an order status is updated or order created (e.g., new, delivered, canceled, etc.).**
+This webhook is used to notify the system when an order status is updated or order created (e.g., new, delivered, canceled, etc.).
 
-## **Endpoint Test URL**
+## Endpoint Test URL
 
-**POST {{your webhook api url}}**
+`POST {{your webhook api url}}`
 
-## **Endpoint Production URL**
+## Endpoint Production URL
 
-**POST {{your webhook api url}}**
+`POST {{your webhook api url}}`
 
-## **Description**
+## Description
 
-**When an order status changes, a webhook request will be sent to the above endpoint containing the order identifier, the new status, and the event metadata.**
+When an order status changes, a webhook request will be sent to the above endpoint containing the order identifier, the new status, and the event metadata.
 
-## **Request Headers**
+## Request Headers
 
-**Content-Type: application/json**
+```
+Content-Type: application/json
+Authorization: Bearer {your_webhook_key} (optional)
+```
 
-**Authorization: Bearer {your_webhook_key} *(optional)***
+**Note:** You can add an authorization key in the Bearer token to authorize the request.
 
-***Note: You can add an authorization key in the Bearer token to authorize the request.***
+**Estimated Time of Arrival (eta)**
 
-***Estimated Time of Arrival (eta)***
+- eta (timestamp)
 
-- ***eta (timestamp)***
+- eta_minutes (number of minutes)
 
-- ***eta_minutes (number of minutes)***
-
-## **Request Payload New Order Created**
+## Request Payload New Order Created
 
 ```json
 {
@@ -59,7 +60,7 @@
 }
 ```
 
-## **Request Payload Update Order Status**
+## Request Payload Update Order Status
 
 ```json
 {
@@ -76,7 +77,7 @@
 }
 ```
 
-## **Request Payload Returned Order Status**
+## Request Payload Returned Order Status
 
 ```json
 {
@@ -93,7 +94,7 @@
 }
 ```
 
-## **Request Payload Change Courier**
+## Request Payload Change Courier
 
 ```json
 {
@@ -110,34 +111,25 @@
 }
 ```
 
-**Hint: Change Courier --- Webhook Sequence**
+#### Change Courier Webhook Sequence
 
-**When a courier is reassigned on an order, the system fires 3 webhooks in sequence**
+When a courier is reassigned on an order, the system fires 3 webhooks in sequence.
 
-**What happens internally**
+**What happens internally:**
 
-1. Old courier is removed --- status set to new
+1. Old courier is removed — status set to new. The existing courier is unassigned. The order reverts to new status and an order_updated webhook is sent with courier fields as null.
 
-The existing courier is unassigned. The order reverts to new status and an order_updated webhook is sent with courier fields as null.
+2. New courier is assigned — status set to accepted. The new courier is linked to the order and their details are populated. An order_updated webhook is sent with the new courier's information.
 
-2. New courier is assigned --- status set to accepted
+3. Courier change confirmation sent. A dedicated courier_changed webhook is sent containing the new courier details.
 
-The new courier is linked to the order and their details are populated. An order_updated webhook is sent with the new courier's information.
+### Get Live Tracking For Orders
 
-3. Courier change confirmation sent
-
-A dedicated courier_changed webhook is sent containing the new courier details**.**
-
-**4. Get Live Tracking For Orders**
-
-  --------- ----------------------------------------------------------------
-   **GET**  Base_URL/api/external/v1/live-tracking
-
-  --------- ----------------------------------------------------------------
+<span class="api-method api-method--get">GET</span> <code>Base_URL/api/external/v1/live-tracking</code>
 
 Retrieves the real-time GPS location of the driver assigned to a specific order.
 
-**Request Headers**
+#### Request Headers
 
 ```
 Authorization: Bearer API-KEY
@@ -145,7 +137,7 @@ Accept: application/json
 Content-Type: application/json
 ```
 
-**Query Param**
+#### Query Parameters
 
 ```json
 {
@@ -153,9 +145,9 @@ Content-Type: application/json
 }
 ```
 
-**Response Examples**
+#### Response Examples
 
-**Success Response --- Driver Assigned (Status: 200)**
+**Success Response — Driver Assigned (Status: 200)**
 
 ```json
 {
@@ -167,7 +159,7 @@ Content-Type: application/json
 }
 ```
 
-**Success Response --- No Driver Assigned (Status: 200)**
+**Success Response — No Driver Assigned (Status: 200)**
 
 ```json
 {
@@ -181,11 +173,10 @@ Content-Type: application/json
 
 ```json
 {
-"message": "Rate limit exceeded. You can call this endpoint once every
-3 minutes per order. Please try again in 161 second(s) (at 13:14:54).",
-"retry_after": 161,
-"retry_at": "13:14:54"
+  "message": "Rate limit exceeded. You can call this endpoint once every 3 minutes per order. Please try again in 161 second(s) (at 13:14:54).",
+  "retry_after": 161,
+  "retry_at": "13:14:54"
 }
 ```
 
-Note: This endpoint is rate-limited to 1 request per order every 3 minutes. Use retry_after (seconds) or retry_at (clock time) from the response to schedule your next request.
+**Note:** This endpoint is rate-limited to 1 request per order every 3 minutes. Use retry_after (seconds) or retry_at (clock time) from the response to schedule your next request.

@@ -6,17 +6,17 @@
 
 This API is used to create or update location's menu.
 
-***Note: Price values are stored in halalas (1 SAR = 100 halalas). Multiply by 100 to convert to Saudi Riyals.***
+**Note:** Price values are stored in halalas (1 SAR = 100 halalas). Multiply by 100 to convert to Saudi Riyals.
 
-> ***ملاحظة: يتم تخزين الأسعار بالـ هللة (1 ريال = 100 هللة). اضرب القيمة في 100 للحصول على السعر بالريال السعودي.***
+> **ملاحظة:** يتم تخزين الأسعار بالـ هللة (1 ريال = 100 هللة). اضرب القيمة في 100 للحصول على السعر بالريال السعودي.
 
-#### *Header*
+#### Header
 
 ```
 Authorization: Bearer {token}
 ```
 
-#### *Payload*
+#### Payload
 
 ```json
 [
@@ -189,7 +189,7 @@ Authorization: Bearer {token}
 ]
 ```
 
-#### *Response*
+#### Response
 
 #### Status:200
 

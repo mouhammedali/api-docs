@@ -6,14 +6,14 @@
 
 This API is used to create jwt tokens.
 
-#### *Header*
+#### Header
 
 ```
 Client-Secret:API KEY
 Vendor : VENDOR_NAME
 ```
 
-#### *Payload*
+#### Payload
 
 ```json
 {
@@ -22,7 +22,7 @@ Vendor : VENDOR_NAME
 }
 ```
 
-#### *Response*
+#### Response
 
 #### status:200
 
@@ -48,11 +48,11 @@ Status 401 , 400
 
 This API is used to retrieve the available days and their IDs.
 
-#### *Payload*
+#### Payload
 
 This endpoint does not require a request payload.
 
-#### *Response*
+#### Response
 
 ```json
 [
@@ -106,11 +106,11 @@ This endpoint does not require a request payload.
 
 This API is used to retrieve all allergens.
 
-#### *Payload*
+#### Payload
 
 This endpoint does not require a request payload.
 
-#### *Response*
+#### Response
 
 ```json
 [

@@ -12,7 +12,7 @@ This API is used to update an order.
 
 - **apiKey** -- same value as secretKey
 
-#### *Payload*
+#### Payload
 
 - partner_order_id (string, required): Unique identifier for the partner order
 
@@ -25,7 +25,7 @@ This API is used to update an order.
 }
 ```
 
-#### *Response*
+#### Response
 
 Status : 200
 

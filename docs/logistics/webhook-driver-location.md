@@ -1,26 +1,27 @@
 # Driver Location Webhook
 
-**This webhook is used to notify the logistic integration when a driver location is updated for an active order after pickup.**
+This webhook is used to notify the logistic integration when a driver location is updated for an active order after pickup.
 
-## **Endpoint Test URL**
+## Endpoint Test URL
 
-**POST {{your webhook api url}}**
+`POST {{your webhook api url}}`
 
-## **Endpoint Production URL**
+## Endpoint Production URL
 
-**POST {{your webhook api url}}**
+`POST {{your webhook api url}}`
 
-## **Description**
+## Description
 
-**When the driver picks up the order, we will start sending the driver's location to the configured driver location webhook URL every 2 minutes until the order is delivered.**
+When the driver picks up the order, we will start sending the driver's location to the configured driver location webhook URL every 2 minutes until the order is delivered.
 
-## **Request Headers**
+## Request Headers
 
-**Content-Type: application/json**
+```
+Content-Type: application/json
+Authorization: Bearer {your_webhook_key} (optional)
+```
 
-**Authorization: Bearer {your_webhook_key} *(optional)***
-
-***Note: You can add an authorization key in the Bearer token to authorize the request.***
+**Note:** You can add an authorization key in the Bearer token to authorize the request.
 
 - **event: always driver_location_updated**
 
@@ -42,7 +43,7 @@
 
 - **location_updated_at: time when the driver location was last updated in Mr. Mandoob system**
 
-## **Request Payload Driver Location Updated**
+## Request Payload Driver Location Updated
 
 ```json
 {

@@ -12,13 +12,12 @@ Cancels an existing order. Only orders with specific statuses can be cancelled.
 
 #### Request Headers
 
+```
 Authorization: Bearer API-KEY
-
 Accept: application/json
-
 Content-Type: application/json
-
 lang: en (optional, default: ar)
+```
 
 #### Request Payload
 

@@ -10,13 +10,12 @@ Returns an order to the sender. Only orders with specific statuses can be return
 
 #### Request Headers
 
+```
 Authorization: Bearer API-KEY
-
 Accept: application/json
-
 Content-Type: application/json
-
 lang: en (optional, default: ar)
+```
 
 #### Request Payload
 

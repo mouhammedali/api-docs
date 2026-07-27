@@ -14,7 +14,7 @@ This API is used to create a single category for a big menu.
 
 > ⚠️ Both headers must have **the same value** ($APIKEY) and be sent with **every request**, otherwise you'll get a **401 Unauthorized** error.
 
-**This API is synchronous and responds instantly.**
+This API is synchronous and responds instantly.
 
 - **en_name: English category name**
 
@@ -83,7 +83,7 @@ This API is used to update a single category for a big menu.
 
 > ⚠️ Both headers must have **the same value** ($APIKEY) and be sent with **every request**, otherwise you'll get a **401 Unauthorized** error.
 
-**This API is synchronous and responds instantly.**
+This API is synchronous and responds instantly.
 
 - **en_name: English category name**
 

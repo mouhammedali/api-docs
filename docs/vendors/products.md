@@ -14,7 +14,7 @@ This API is used to add products for a big menu , max 1000 products.
 
 > ⚠️ Both headers must have **the same value** ($APIKEY) and be sent with **every request**, otherwise you'll get a **401 Unauthorized** error.
 
-**This API is asynchronous and returns a "queued".**
+This API is asynchronous and returns a "queued" status while it processes in the background.
 
 - **callbackUrl :If the product addition fails, the system will send the result to the callback URL**
 
@@ -159,7 +159,7 @@ This API is used to update products for a big menu , max 1000 products.
 
 > ⚠️ Both headers must have **the same value** ($APIKEY) and be sent with **every request**, otherwise you'll get a **401 Unauthorized** error.
 
-**This API is asynchronous and returns a "queued".**
+This API is asynchronous and returns a "queued" status while it processes in the background.
 
 - **callbackUrl :If the product addition fails, the system will send the result to the callback URL**
 

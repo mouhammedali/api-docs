@@ -6,13 +6,12 @@ Retrieves the current status of an order.
 
 #### Request Headers
 
+```
 Authorization: Bearer API-KEY
-
 Accept: application/json
-
 Content-Type: application/json
-
 lang: en (optional, default: ar)
+```
 
 #### Query Parameters
 

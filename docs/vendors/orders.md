@@ -6,13 +6,13 @@
 
 This API is used to cancel an order.
 
-#### *Header*
+#### Header
 
 ```
 Authorization: Bearer {token}
 ```
 
-#### *Payload*
+#### Payload
 
 ```json
 {
@@ -24,7 +24,7 @@ Authorization: Bearer {token}
 }
 ```
 
-#### *Response*
+#### Response
 
 Status : 200
 
@@ -53,7 +53,7 @@ Status : 400
 
 This API is used to place an order
 
-#### *Header*
+#### Header
 
 Expect authentication like this
 
@@ -61,9 +61,9 @@ Expect authentication like this
 Authorization: Bearer {token}
 ```
 
-#### *Payload*
+#### Payload
 
-***The prices are multiplied by 100 as shown in the code (price * 100).***
+**Note:** The prices are multiplied by 100 as shown in the code (price * 100).
 
 If the product have a variant
 
@@ -208,7 +208,7 @@ If product does not have a variant
 }
 ```
 
-#### *Expected Response*
+#### Expected Response
 
 Status : 201
 
@@ -232,7 +232,7 @@ This API is used to cancel an order from MrMandoob.
 
 We'll use this webhook to update all order statuses, starting with the Delivered status when the driver completes the order.
 
-#### *Header*
+#### Header
 
 Expect authentication like this
 
@@ -240,7 +240,7 @@ Expect authentication like this
 Authorization: Bearer {token}
 ```
 
-#### *Payload*
+#### Payload
 
 ```json
 {
@@ -252,7 +252,7 @@ Authorization: Bearer {token}
 }
 ```
 
-#### *Expected Response*
+#### Expected Response
 
 Status : 200
 
@@ -266,7 +266,7 @@ Status : 400
 Return validation errors
 ```
 
-## **Integration cycle**
+## Integration cycle
 
 ![](../assets/vendors/media/image5.png)
 

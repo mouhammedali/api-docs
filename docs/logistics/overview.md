@@ -1,8 +1,6 @@
 # Overview & Authentication
 
-![](../assets/logistics/media/image1.png)
-
-## **Environment URLs**
+## Environment URLs
 
 - **Staging URL:** https://integration.mrmandoob.info
 
@@ -10,16 +8,15 @@
 
 > **Important:** Partners must send their IP addresses for both staging and production environments to be whitelisted.
 
-## **Authentication**
+## Authentication
 
 All API requests require authentication using a Bearer token in the Authorization header.
 
 ### Common Headers
 
+```
 Authorization: Bearer API-KEY
-
 Accept: application/json
-
 Content-Type: application/json
-
 lang: en (optional, default: ar)
+```

@@ -4,7 +4,7 @@
 
 This API is used to add orders.
 
-#### *Header*
+#### Header
 
 ```
 Authorization: Bearer API-KEY
@@ -12,7 +12,7 @@ Accept:application/json
 Content-Type:application/json
 ```
 
-#### *Payload*
+#### Payload
 
 ```json
 {
@@ -32,7 +32,7 @@ Content-Type:application/json
 }
 ```
 
-#### *Response*
+#### Response
 
 #### Success response status: 200
 

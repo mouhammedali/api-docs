@@ -6,13 +6,13 @@
 
 This API is used to make a location in busy mode to stop receiving orders.
 
-#### *Header*
+#### Header
 
 ```
 Authorization: Bearer {token}
 ```
 
-#### *Payload*
+#### Payload
 
 ```json
 {
@@ -23,7 +23,7 @@ Authorization: Bearer {token}
 }
 ```
 
-#### *Response*
+#### Response
 
 Status : 200
 
@@ -52,13 +52,13 @@ Status 400
 
 This API is used to make a product or a modifier item Snooze or Unsnooze.
 
-#### *Header*
+#### Header
 
 ```
 Authorization: Bearer {token}
 ```
 
-#### *Payload*
+#### Payload
 
 ```json
 {
@@ -96,7 +96,7 @@ Authorization: Bearer {token}
 }
 ```
 
-#### *Response*
+#### Response
 
 Status : 200
 
@@ -123,13 +123,13 @@ Status : 400
 
 This API is used to send order preparation time
 
-#### *Header*
+#### Header
 
 ```
 Authorization: Bearer {token}
 ```
 
-#### *Payload*
+#### Payload
 
 ```json
 {
@@ -140,7 +140,7 @@ Authorization: Bearer {token}
 }
 ```
 
-#### *Response*
+#### Response
 
 Status : 200
 
