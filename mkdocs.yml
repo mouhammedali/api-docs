@@ -5,6 +5,7 @@ docs_dir: docs
 theme:
   name: material
   language: en
+  favicon: assets/img/favicon.png
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
