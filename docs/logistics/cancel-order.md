@@ -1,7 +1,5 @@
 # Cancel Order
 
-### Cancel Order
-
 **Endpoint:** <span class="api-method api-method--post">POST</span> <code>Base_URL/api/external/v1/cancel-order</code>
 
 Cancels an existing order. Only orders with specific statuses can be cancelled.

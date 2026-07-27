@@ -287,5 +287,3 @@ Return validation errors
 > For supermarkets and pharmacies
 >
 > ![](../assets/vendors/media/image2.png)
-
-**add category**

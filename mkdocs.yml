@@ -47,18 +47,18 @@ nav:
   - Vendors API:
       - Overview & Authentication: vendors/overview.md
       - Menu Management: vendors/menu.md
-      - Availability & Timing: vendors/availability.md
-      - Orders & Webhooks: vendors/orders.md
       - Categories: vendors/categories.md
       - Products: vendors/products.md
       - Promotions & Inventory: vendors/promotions.md
+      - Availability & Timing: vendors/availability.md
+      - Orders & Webhooks: vendors/orders.md
       - Order Status Updates: vendors/order-status.md
   - Logistics API:
-      - Add Order: logistics/add-order.md
       - Overview & Authentication: logistics/overview.md
+      - Add Order: logistics/add-order.md
+      - Get Order Status: logistics/order-status.md
       - Cancel Order: logistics/cancel-order.md
       - Return Order: logistics/return-order.md
-      - Get Order Status: logistics/order-status.md
       - Error Handling: logistics/errors.md
       - Change Status Webhook: logistics/webhook-status.md
       - Driver Location Webhook: logistics/webhook-driver-location.md

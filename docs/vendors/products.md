@@ -283,5 +283,3 @@ This API is used to update products for a big menu , max 1000 products.
   "message": "Products queued for processing."
 }
 ```
-
-**Add promotion**

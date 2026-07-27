@@ -1,7 +1,5 @@
 # Get Order Status
 
-### Get Order Status
-
 **Endpoint:** <span class="api-method api-method--get">GET</span> <code>Base_URL/api/external/v1/get-order-status</code>
 
 Retrieves the current status of an order.

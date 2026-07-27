@@ -1,7 +1,5 @@
 # Error Handling
 
-## **Error Handling**
-
 ### Common HTTP Status Codes
 
 - **200:** Success

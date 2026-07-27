@@ -135,5 +135,3 @@ Response
   }
 }
 ```
-
-**add products**

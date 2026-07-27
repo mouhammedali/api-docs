@@ -228,5 +228,3 @@ This API is used update qty and availability
   "message": "Inventory processed successfully."
 }
 ```
-
-**Cancel order**

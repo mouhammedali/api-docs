@@ -1,5 +1,47 @@
 # Overview & Authentication
 
+### Create Token
+
+<span class="api-method api-method--post">POST</span> <code>Auth_Base_URL/api/v1/create-token</code>
+
+This API is used to create jwt tokens.
+
+#### *Header*
+
+```
+Client-Secret:API KEY
+Vendor : VENDOR_NAME
+```
+
+#### *Payload*
+
+```json
+{
+  "scope": "vendors_scope",
+  "grant_type": "client_credentials"
+}
+```
+
+#### *Response*
+
+#### status:200
+
+```json
+{
+  "type": "Bearer",
+  "token": "74a3bbcfca92f5e11289bb9876453b3c2fbc43ce7e8129c72e03a8cf57b28da6",
+  "expires_at": 3599
+}
+```
+
+Status 401 , 400
+
+```json
+{
+  "message": "The given data was invalid."
+}
+```
+
 ### Get Days
 
 <span class="api-method api-method--get">GET</span> <code>Base_URL/api/v1/vendor/days</code>
@@ -213,46 +255,4 @@ This endpoint does not require a request payload.
 "allergenId": 134
 },
 ]
-```
-
-### Create Token
-
-<span class="api-method api-method--post">POST</span> <code>Auth_Base_URL/api/v1/create-token</code>
-
-This API is used to create jwt tokens.
-
-#### *Header*
-
-```
-Client-Secret:API KEY
-Vendor : VENDOR_NAME
-```
-
-#### *Payload*
-
-```json
-{
-  "scope": "vendors_scope",
-  "grant_type": "client_credentials"
-}
-```
-
-#### *Response*
-
-#### status:200
-
-```json
-{
-  "type": "Bearer",
-  "token": "74a3bbcfca92f5e11289bb9876453b3c2fbc43ce7e8129c72e03a8cf57b28da6",
-  "expires_at": 3599
-}
-```
-
-Status 401 , 400
-
-```json
-{
-  "message": "The given data was invalid."
-}
 ```

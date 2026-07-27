@@ -1,7 +1,5 @@
 # Return Order
 
-### Return Order
-
 **Endpoint:** <span class="api-method api-method--post">POST</span> <code>Base_URL/api/external/v1/return-order</code>
 
 Returns an order to the sender. Only orders with specific statuses can be returned.

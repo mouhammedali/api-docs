@@ -1,15 +1,5 @@
 # Add Order
 
-![](../assets/logistics/media/image1.png)
-
-**Staging URL**: https://integration.mrmandoob.info
-
-**Production URL**: https://mrmandoob.com
-
-**Note:** partners must send their ip's for both staging and production, so we can whitelist them.
-
-### Add Order
-
 <span class="api-method api-method--post">POST</span> <code>Base_URL/api/external/v1/add-order</code>
 
 This API is used to add orders.
@@ -71,9 +61,3 @@ Error response status: 400
   "message": "The given data was invalid."
 }
 ```
-
-V2
-
-**Logistic API documentation**
-
-MrMandoob.com

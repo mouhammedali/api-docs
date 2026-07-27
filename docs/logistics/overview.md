@@ -1,5 +1,7 @@
 # Overview & Authentication
 
+![](../assets/logistics/media/image1.png)
+
 ## **Environment URLs**
 
 - **Staging URL:** https://integration.mrmandoob.info
@@ -21,5 +23,3 @@ Accept: application/json
 Content-Type: application/json
 
 lang: en (optional, default: ar)
-
-## **API Endpoints**
